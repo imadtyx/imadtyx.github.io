@@ -1,8 +1,27 @@
-body {
-  background-color:#ce3635;
-  text-align: center;
-  color:#fff;
-  padding-top:10em;
-}
+    body {
+      text-align: center;
+      padding-top: 10em;
+      animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 5s infinite; /* Chrome and Safari */
+    }
 
-* { color:#fff; text-decoration: none;}}
+    @keyframes colorchange
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: rebeccapurple;}
+      25%  {background: yellow;}
+      50%  {background: orange;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
+/* { color:#fff; text-decoration: none;}}*/

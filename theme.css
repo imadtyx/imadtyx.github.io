@@ -63,9 +63,30 @@ body {
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: rgb(10, 127, 236);
+  /*color: rgb(10, 127, 236);*/
   text-align: left;
-  background-color: #cb4154; }
+  /*background-color: #cb4154;*/
+  animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 5s; /* Chrome and Safari */
+
+  @keyframes colorchange
+  {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    75%  {color: green;}
+    100% {color: red;}
+  }
+
+  @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+  {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    75%  {color: green;}
+    100% {color: red;}
+  }}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
