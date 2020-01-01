@@ -1,3 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Alegreya Sans SC';
+  font-size: 19px;
+  line-height: 1.6;
+  margin: 0;
+  min-height: 100vh;
+}
+ul li {
+  /*position: absolute;
+  top: 10px;
+  left: 20%;*/
+  text-align: center;
+  display: inline-block;
+  float: left;
+  margin: 0 auto;
+  padding: 0px 20px;
+  list-style: none;
+  background-color:white;
+}
+
+
+h2,
+h3,
+a {
+  color: #34495e;
+}
+
+a {
+  text-decoration: none;
+}
+h1{text-align:center;}
+
+
+.logo {
+  margin: 0;
+  font-size: 1.45em;
+}
+
+.main-nav {
+  margin-top: 5px;
+
+}
+
+.main-nav a {
+  position: relative;
+  /*top: 10px;*/
+  left: -500%;
+  padding: 0px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color:#34495e;
+}
+
+.logo a{
+  position: absolute;
+  top: 10px;
+  left: 45%;
+  /*right:50%;*/
+  padding: 10px 15px;
+  font-family: 'Nothing You Could Do';
+  /*text-transform: uppercase;*/
+  text-align: center;
+  display: block;
+  color:#34495e;
+}
+
+.main-nav a {
+  color: #34495e;
+  font-size: .99em;
+}
+
+.main-nav a:hover {
+  color: #718daa;
+}
+
+
+
+.header {
+  padding-top: 4em;
+  padding-bottom: .5em;
+  border: 1px solid #a2a2a2;
+  /*background-color: #f4f4f4;*/
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color:white;
+}
+
+h2{
+  text-align:center;
+  animation: sizechange 2s;
+
+}
+
+@keyframes sizechange{
+  from{font-family: 'Alegreya Sans SC';
+      font-size: 22px;
+      /*text-align: bottom;*/
+      /*margin-top:200px;*/
+      opacity:0.0;}
+  to{font-family: 'Alegreya Sans SC';
+      font-size: 28.5px;
+      /*text-align: center;*/
+      opacity:1;    
+  }
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+  .header,
+  .main-nav {
+    display: flex;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+      .header{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+  }
+
+}
+
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
 /*! Themestr.app `Darkster` Bootstrap 4.3.1 theme */
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:200,300,400,700);
 @import url("./custom.css");
