@@ -1,6 +1,6 @@
 ul {
   list-style-type: none;
-  margin-top: -200px;
+  margin-top: -220px;
   padding: 0;
   overflow: hidden;
   background-color: #333;
@@ -31,24 +31,24 @@ li a:hover {
       font-family: 'Alegreya Sans SC';
       font-size: 22px;
       text-align: center;
-      padding-top: 10em;
+      padding-top: 10em;*/
       animation: colorchange 50s; 
       -webkit-animation: colorchange 50s infinite; 
     }
 h2{
-  animation: sizechange 4s;
+  animation: sizechange 2s;
 }
 
 @keyframes sizechange{
   from{font-family: 'Alegreya Sans SC';
-      font-size: 10px;
-      text-align: bottom;
-      margin-top:200px;
-      color:white;}
-  to{font-family: 'Alegreya Sans SC';
       font-size: 22px;
-      text-align: center;
-      color:black;    
+      /*text-align: bottom;*/
+      /*margin-top:200px;*/
+      opacity:0.0;}
+  to{font-family: 'Alegreya Sans SC';
+      font-size: 33px;
+      /*text-align: center;*/
+      opacity:1;    
   }
 }
     @keyframes colorchange
