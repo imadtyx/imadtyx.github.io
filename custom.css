@@ -1,6 +1,5 @@
 
-* {
-  box-sizing: border-box;
+* {  box-sizing: border-box;
 }
 body {
   font-family: 'Alegreya Sans SC';
@@ -10,10 +9,7 @@ body {
   min-height: 100vh;
 }
 
-
-h2,
-h3,
-a {
+h2, h3, a {
   color: #34495e;
 }
 
@@ -23,21 +19,24 @@ a {
 h1{text-align:center;}
 ul{
   list-style-type: none;
+  width: 100%;
+  display:inline-block;
+  text-align:center;
 }
-ul li a{
-
-  margin: 0 20px;
-  font-size: 1.45em;
+ul li{
   position: relative;
-  top: 5px;
-  right: 150%;
-  /*right:50%;*/
-  padding: 10px 25px;
+  left:0%;
+  padding: 5px 15px;
   font-family: 'Alegreya Sans SC';
-  /*text-transform: uppercase;*/
-  text-align: left;
-  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
   color:#34495e;
+}
+
+ul li a:hover{
+
+  color: #718daa;
 }
 
 .logo {
@@ -45,55 +44,29 @@ ul li a{
   font-size: 1.45em;
 }
 
-/*.main-nav {
-  margin-top: 5px;
 
-}*/
-
-/*.main-nav a {
-  position: relative;
-  top: 10px;
-  left: -500%;
-  padding: 0px 20px;
-  text-transform: uppercase;
-  text-align: center;
-  display: block;
-  color:#34495e;
-}
-*/
 .logo a{
-  position: absolute;
-  top: 10px;
-  left: 45%;
+  position: relative;
+  top: 0px;
+  left: 0%;
   /*right:50%;*/
-  padding: 10px 15px;
+  font-size:2.5em;
+  padding: 5px 5px;
   font-family: 'Nothing You Could Do';
   /*text-transform: uppercase;*/
   text-align: center;
-  display: block;
+  display: inline;
   color:#34495e;
 }
 
-/*.main-nav a {
-  color: #34495e;
-  font-size: .99em;
-  width: 25%;
-}
-
-.main-nav a:hover {
-  color: #718daa;
-}
-
-*/
-
 .header {
-  padding-top: 4em;
+  padding-top: .5em;
   padding-bottom: .5em;
   border: 1px solid #a2a2a2;
   /*background-color: #f4f4f4;*/
-  -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,1);
-  box-shadow: 0px 0px 18px 0px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.0);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.0);
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.0);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -115,19 +88,19 @@ h2{
   to{font-family: 'Alegreya Sans SC';
       font-size: 28.5px;
       /*text-align: center;*/
-      opacity:1;    
+      opacity:1;
   }
 }
 
 
-/* ================================= 
+/* =================================
   Media Queries
 ==================================== */
 
 
 
 
-@media (min-width: 769px) {
+/*@media (min-width: 769px) {
   .header,
   .main-nav {
     display: flex;
@@ -150,7 +123,7 @@ h2{
     justify-content: space-between;
   }
 
-}
+}*/
 
 
 /*ul {
@@ -177,7 +150,7 @@ li a {
 
 
 li a:hover {
-  
+
 
   animation-name: example;
   animation-duration: 1s;
@@ -187,8 +160,8 @@ li a:hover {
       font-size: 22px;
       text-align: center;
       padding-top: 10em;*/
-     /* animation: colorchange 50s; 
-      -webkit-animation: colorchange 50s infinite; 
+     /* animation: colorchange 50s;
+      -webkit-animation: colorchange 50s infinite;
     }
 h2{
   animation: sizechange 2s;
@@ -203,7 +176,7 @@ h2{
   to{font-family: 'Alegreya Sans SC';
       font-size: 33px;
       /*text-align: center;*/
-      /*opacity:1;    
+      /*opacity:1;
   }
 }
     @keyframes colorchange
@@ -215,7 +188,7 @@ h2{
       100% {background: tomato;}
     }
 
-    @-webkit-keyframes colorchange 
+    @-webkit-keyframes colorchange
     {
       0%   {background-image: url("BBS_6611.jpg");
             background-repeat: no-repeat;
