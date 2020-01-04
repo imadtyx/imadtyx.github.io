@@ -14,7 +14,7 @@
 //     setTimeout(function(){
 //         navtab.removeClass("moving").removeClass("hidemiddle");
 //     }, 750);
-// }); 
+// });
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -68,7 +68,7 @@ var TxtType = function(el, toRotate, period) {
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
         document.body.appendChild(css);
     };var i = 0;
 var txt = 'Lorem ipsum dummy text blabla.';
