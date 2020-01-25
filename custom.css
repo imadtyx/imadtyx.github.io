@@ -52,7 +52,7 @@ ul li a:hover{
 }
 
 .link_wrapper{
-  position: relative;
+position: relative;
 }
 
 .cv {
@@ -67,20 +67,19 @@ ul li a:hover{
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 3px solid #333;
+  border: 3px solid transparent;
   transition: all .35s;
 }
-
 
 .icon{
   width: 50px;
   height: 50px;
-  border: 3px solid transparent;
   position: absolute;
   transform: rotate(135deg);
-  right: 85%;
+  right: 40%;
   top: 0;
   z-index: -1;
+  transition-delay: .35s;
   transition: all .35s;
 }
 
@@ -91,6 +90,7 @@ ul li a:hover{
   right: calc(50% - 15px);
   transform: rotate(-45deg);
   fill: #34495e;
+  transition-delay: .35s;
   transition: all .35s;
 }
 
@@ -98,23 +98,21 @@ ul li a:hover{
   width: 200px;
   border: 3px solid #34495e;
   background: transparent;
-  color: #34495e;
+  color: transparent;
 }
 
-.cv:hover + .icon{
-  border: 3px solid #34495e;
-  right: 95%;
+.cv:hover +  .icon{
+  border: 0px solid transparent;
+  right: 40%;
 }
 
 .logo a{
   position: relative;
   top: 0px;
   left: 0%;
-  /*right:50%;*/
   font-size:2.5em;
   padding: 5px 5px;
   font-family: 'Nothing You Could Do';
-  /*text-transform: uppercase;*/
   text-align: center;
   display: inline;
   color:#34495e;
