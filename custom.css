@@ -78,7 +78,7 @@ ul li a:hover{
   border: 3px solid transparent;
   position: absolute;
   transform: rotate(135deg);
-  right: 0;
+  right: 85%;
   top: 0;
   z-index: -1;
   transition: all .35s;
@@ -88,7 +88,7 @@ ul li a:hover{
   width: 30px;
   position: absolute;
   top: calc(50% - 15px);
-  left: calc(50% - 15px);
+  right: calc(50% - 15px);
   transform: rotate(-45deg);
   fill: #34495e;
   transition: all .35s;
