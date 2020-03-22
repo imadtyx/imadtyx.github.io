@@ -9,6 +9,10 @@ body {
   min-height: 100vh;
 }
 
+h1 {
+    font-family: 'Alegreya Sans SC';
+}
+
 h2, h3, a {
   color: #34495e;
 }
