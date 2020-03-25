@@ -1,0 +1,39 @@
+/* fashio/ */
+h1{
+    text-align:center;
+    font-family: 'Alegreya Sans SC';
+    color: #34495e;
+}
+
+.fashion1 {
+  background-color: white;
+  color: #34495e;
+  border: 2px solid #34495e;
+  position:absolute;
+  top:600;
+  left:100;
+  width:13.4%;
+  transition-duration: 0.4s;
+}
+
+.fashion1:hover {
+  background-color: #34495e; /* Green */
+  color: white;
+
+}
+
+.fashion2 {
+  background-color: white;
+  color: #34495e;
+  border: 2px solid #34495e;
+  position:absolute;
+  top:600;
+  left:290;
+  width:13.4%;
+  transition-duration: 0.4s;
+}
+
+.fashion2:hover {
+  background-color: #34495e; /* Green */
+  color: white;
+}
