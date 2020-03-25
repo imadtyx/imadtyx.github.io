@@ -150,7 +150,7 @@ async function run() {
 //    tfvis.show.modelSummary({name: 'Model Architecture'}, model);
 //    await train(model, data);
 //    await model.save('downloads://my_model');
-    const model = await tf.loadLayersModel('./my_model');
+    const model = await tf.loadLayersModel('https://github.com/imadtyx/imadtyx.github.io/my_model.json');
     init();
     alert("Training is done, try classifying your drawings!");
 }
