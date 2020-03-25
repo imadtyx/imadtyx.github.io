@@ -144,8 +144,8 @@ function init() {
 
 
 async function run() {
-//    const data = new FMnistData();
-//    await data.load();
+    const data = new FMnistData();
+    await data.load();
 //    const model = getModel();
 //    tfvis.show.modelSummary({name: 'Model Architecture'}, model);
 //    await train(model, data);
