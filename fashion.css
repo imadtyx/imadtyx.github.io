@@ -37,3 +37,53 @@ h1{
   background-color: #34495e; /* Green */
   color: white;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body{
+/*  padding: 40px;*/
+  background-color: #fff;  
+  letter-spacing: 6px; 
+  font-size:30px; 
+}
+
+p {
+  border-right: solid 3px #34495e;
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Waiting for the Sunrise', cursive;  
+  font-size: 28px;
+  color: #34495e;
+  font-weight: bold;
+    
+  text-align:center;
+  
+  transform: translate(-50%, -50%);
+  position:fixed;
+  top:50%;
+  left: 65%;
+ 
+}
+
+/* Animation */
+p {
+  animation: animated-text 7s steps(15,end) 1s 1 normal both,
+             animated-cursor 7s steps(15, end) 1s 1 normal both;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  0%{width: 0px;}
+  35%{width: 572px;}
+  65%{width: 572px;}
+  100%{width: 0px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: #34495e;}
+  99%{border-right-color: #34495e;}
+  to{border-right-color: transparent;}
+}
